@@ -1,0 +1,28 @@
+#waitlist-view{
+  height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+.apply{
+	display: flex;
+	align-items: center;
+	background-color: #F5A623;
+	border-radius: 30px;
+	height: 60px;
+	width: fit-content;
+	padding: 10px 20px;
+}
+
+@media(max-width : 760px){ 
+  .flex-ci{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+	.flex-center{
+		align-items: center;
+	}
+}

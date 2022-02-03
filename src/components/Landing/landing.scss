@@ -1,0 +1,16 @@
+#landing-view {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	color: white;
+}
+
+.join{
+	display: flex;
+	align-items: center;
+	background-color: #F5A623;
+	border-radius: 30px;
+	height: 60px;
+	padding: 10px 20px
+}

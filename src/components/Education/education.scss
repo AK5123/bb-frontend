@@ -1,0 +1,25 @@
+#education-view{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+.tl{
+	text-align: left!important;
+	width: 100%;
+}
+
+@media(max-width : 760px){ 
+	#education-view{
+		height: auto !important
+  }
+	.flex-col{
+		flex-direction: column;
+	}
+	.flex-alcenter{
+		align-items: center!important;
+	}
+}
