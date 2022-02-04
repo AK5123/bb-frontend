@@ -1,6 +1,7 @@
 import { Box, Grid, useTheme, Zoom, Link, SvgIcon } from "@material-ui/core";
 import Yoga from "../../assets/icons/yoga.png";
 import LogoIcon from "../../assets/icons/bb.png";
+import { ReactComponent as ForwardIcon } from "../../assets/icons/forward.svg";
 
 import "./waitlist.scss";
 
@@ -8,7 +9,7 @@ const Waitlist = () => {
   return (
     <div id="waitlist-view">
       <Box sx={{ width: "100%", padding: "2rem" }}>
-        <p>
+        <p className="subtitle-bb">
           Join the <span>waitlist</span>
         </p>
       </Box>
@@ -18,6 +19,7 @@ const Waitlist = () => {
           padding: "2rem",
           display: "flex",
           alignItems: "center",
+          overflow: "hidden",
         }}
         className="flex-ci"
       >
@@ -29,23 +31,19 @@ const Waitlist = () => {
           }}
           className="flex-center"
         >
-          <p style={{ textAlign: "left" }}>
+          <p className="caption-bb" style={{ textAlign: "left" }}>
             Get notified on new updates and avail early access. <br /> Help out
-            with a quick questionaire and be and early contributor.
+            with a quick questionaire and be and early <span>contributor</span>
           </p>
           <div className="apply" style={{ marginTop: "2rem" }}>
-            <p>Apply & Join</p>
-            <img
-              style={{ marginLeft: "10px" }}
-              src={LogoIcon}
-              width="20px"
-              alt="logo"
-            ></img>
+            <p className="button-text-bb">Apply & Join</p>
+            <ForwardIcon style={{ marginLeft: "10px" }} />
           </div>
         </Box>
         <Box sx={{ padding: "2rem" }}>
           <img
-            style={{ maxWidth: "80%", height: "auto" }}
+            className="yoga"
+            style={{ maxWidth: "80%", height: "auto", borderRadius: "60px" }}
             src={Yoga}
             alt="logo"
           ></img>

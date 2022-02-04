@@ -21,8 +21,13 @@
   .flex-ci{
     display: flex;
     flex-direction: column-reverse;
+	width: 90%!important;
   }
 	.flex-center{
 		align-items: center;
+	}
+
+	.yoga{
+		max-width: 50%!important;
 	}
 }
