@@ -7,10 +7,9 @@ import {
   SvgIcon,
   useMediaQuery,
 } from "@material-ui/core";
-import {ReactComponent as Trifecta1} from "../../assets/icons/trifecta-1.svg";
-import {ReactComponent as Trifecta2} from "../../assets/icons/trifecta-2.svg";
-import {ReactComponent as Trifecta3} from "../../assets/icons/trifecta-3.svg";
-
+import Trifecta1 from "../../assets/icons/trifecta-1.png";
+import Trifecta2 from "../../assets/icons/trifecta-2.png";
+import Trifecta3 from "../../assets/icons/trifecta-3.png";
 
 import "./education.scss";
 
@@ -31,37 +30,52 @@ const Education = () => {
         </p>
       </Box>
       <Box className="flex-col">
-        <Box
-          className="flex-alcenter"
-        >
-          <Trifecta1/>
-          <p className="tl">Learn</p>
-          <p className="tl">
+        <Box className="flex-alcenter">
+          <img
+            src={Trifecta1}
+            style={{ width: "auto", height: "50%" }}
+            alt="Tri1"
+            className="small-icon"
+          ></img>
+          <p className="tl button-text-bb">
+            <span>Learn</span>
+          </p>
+          <p className="tl caption-bb">
             and understand crypto in the most easiest way possible with curated
             paths designed in getting you up and running with a solid foundation
             in no time.
           </p>
         </Box>
-        <Box
-          className="flex-alcenter"
-        >
-          <Trifecta2/>
-          <p className="tl">Learn</p>
-          <p className="tl">
-            and understand crypto in the most easiest way possible with curated
-            paths designed in getting you up and running with a solid foundation
-            in no time.
+        <Box className="flex-alcenter">
+          <img
+            src={Trifecta2}
+            style={{ width: "auto", height: "50%" }}
+            alt="Tri1"
+            className="small-icon"
+          ></img>
+          <p className="tl button-text-bb">
+            <span>Practice</span>
+          </p>
+          <p className="tl caption-bb">
+            and complete quests to earn XP’s & get practical exposure
+            interacting with protocols and projects in a test environment.
+            Redeem XP’s for valuable incentives or earn crypto.
           </p>
         </Box>
-        <Box
-          className="flex-alcenter"
-        >
-          <Trifecta3/>
-          <p className="tl">Learn</p>
-          <p className="tl">
-            and understand crypto in the most easiest way possible with curated
-            paths designed in getting you up and running with a solid foundation
-            in no time.
+        <Box className="flex-alcenter">
+          <img
+            src={Trifecta3}
+            style={{ width: "auto", height: "50%" }}
+            alt="Tri1"
+            className="small-icon"
+          ></img>
+          <p className="tl button-text-bb">
+            <span>Connect</span>
+          </p>
+          <p className="tl caption-bb">
+            and learn with other people in the community who are like-minded and
+            passionate as you are. The best way through this dark forest is by
+            holding hands and looking out for each other.
           </p>
         </Box>
       </Box>

@@ -9,12 +9,15 @@
 
 .tl{
 	text-align: left!important;
+	padding: 0.5rem;
 	width: 100%;
 }
 
 .flex-col{
 	display: flex;
+	flex: 1;
 	width: 90%;
+	overflow: hidden;
 }
 .flex-alcenter{
 	flex: 1;
@@ -33,5 +36,9 @@
 	}
 	.flex-alcenter{
 		align-items: center!important;
+		margin-bottom: 2rem;
+	}
+	.small-icon{
+		height: 50vh!important;
 	}
 }
