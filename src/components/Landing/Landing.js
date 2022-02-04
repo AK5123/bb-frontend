@@ -1,30 +1,33 @@
 import { Box, Grid, useTheme, Zoom, Link, SvgIcon } from "@material-ui/core";
 import LogoIcon from "../../assets/icons/bb.png";
-
+import {ReactComponent as ExploreIcon } from '../../assets/icons/explore.svg'
+import {ReactComponent as LandBottom } from '../../assets/icons/land-bottom.svg'
+import {ReactComponent as JoinIcon } from '../../assets/icons/join-waitlist.svg'
 import Header from "../Header/Header";
 import Logo from "../Header/Logo";
 import "./landing.scss";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 const Landing = () => {
+  const {width} = useWindowDimensions()
+
   return (
     <div id="landing-view">
-      <Logo />
+      <LandBottom style={{width : '100%', height: (462/1512)*width, position: 'absolute', zIndex: 0, bottom: 0}}/>
       <Header />
       <Box
         sx={{
           width: "50%",
-          height: "80vh",
           display: "flex",
           flexDirection: "column",
-          alignItems: "start",
-          justifyContent: "center",
           paddingLeft: "40px",
+          zIndex: 10,
         }}
       >
-        <p style={{ textAlign: "left", marginTop: "40px" }}>
+        <p className="subtitle-bb" style={{ textAlign: "left", marginTop: "40px" }}>
           Learning web3 made <br /> <span>fun</span>, <span>social</span> and{" "}
           <span>easy</span>
         </p>
-        <p style={{ textAlign: "left", marginTop: "20px" }}>
+        <p className="caption-bb" style={{ textAlign: "left", marginTop: "20px" }}>
           Understand blockchains and crypto with clear, concise and curated
           content. Explore learning paths tailored for you, meet and learn with
           other likeminded people. All packed in a gamified experience.
@@ -37,27 +40,17 @@ const Landing = () => {
             marginTop: "40px",
           }}
         >
-          <div className="join">
+          <div className="button-container">
             <a href="#waitlist-view">
-              <p>Join Waitlist</p>
+              <p className="button-text-bb">Join Waitlist</p>
             </a>
-            <img
-              style={{ marginLeft: "10px" }}
-              src={LogoIcon}
-              width="20px"
-              alt="logo"
-            ></img>
+            <JoinIcon/>
           </div>
-          <div className="join" style={{ marginLeft: "40px" }}>
+          <div className="button-container" style={{ marginLeft: "40px" }}>
             <a href="#education-view">
-              <p>Explore</p>
+              <p className="button-text-bb" >Explore</p>
             </a>
-            <img
-              style={{ marginLeft: "10px" }}
-              src={LogoIcon}
-              width="20px"
-              alt="logo"
-            ></img>
+            <ExploreIcon/>
           </div>
         </Box>
       </Box>

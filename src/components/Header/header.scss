@@ -13,3 +13,10 @@
 .bright {
     color: #F5A623;
 }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+}

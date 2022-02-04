@@ -12,6 +12,18 @@
 	width: 100%;
 }
 
+.flex-col{
+	display: flex;
+	width: 90%;
+}
+.flex-alcenter{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
 @media(max-width : 760px){ 
 	#education-view{
 		height: auto !important

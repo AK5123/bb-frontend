@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: boldFont;
+  src: url("./assets/fonts/league-spartan-bold.otf");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -58,3 +63,34 @@ p > span {
     transform: rotate(360deg);
   }
 }
+
+.title-bb {
+  font-family: boldFont;
+  font-size: 45px;
+}
+
+.subtitle-bb {
+  font-family: boldFont;
+  font-size: 33px;
+}
+
+.button-text-bb {
+  font-family: boldFont;
+  font-size: 22px;
+}
+
+.button-container {
+  padding: 20px 30px;
+  display: flex;
+	align-items: center;
+	background-color: #F5A623;
+  border-radius: 26px;
+  gap: 10px;
+}
+
+.caption-bb {
+  font-size: 18px;
+}
+
+
+

@@ -7,7 +7,10 @@ import {
   SvgIcon,
   useMediaQuery,
 } from "@material-ui/core";
-import Yoga from "../../assets/icons/yoga.png";
+import {ReactComponent as Trifecta1} from "../../assets/icons/trifecta-1.svg";
+import {ReactComponent as Trifecta2} from "../../assets/icons/trifecta-2.svg";
+import {ReactComponent as Trifecta3} from "../../assets/icons/trifecta-3.svg";
+
 
 import "./education.scss";
 
@@ -17,33 +20,21 @@ const Education = () => {
   return (
     <div id="education-view">
       <Box sx={{ width: "100%", padding: "2rem" }}>
-        <p>
+        <p className="subtitle-bb">
           The <span>Trifecta</span> education
         </p>
       </Box>
       <Box sx={{ width: "100%", marginBottom: "3rem", padding: "0 2rem" }}>
-        <p>
+        <p className="caption-bb">
           To acheive the goal of onboarding humans from the centralized relam to
           the decentralized dark forest
         </p>
       </Box>
-      <Box className="flex-col" sx={{ width: "90%", display: "flex" }}>
+      <Box className="flex-col">
         <Box
           className="flex-alcenter"
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            flexDirection: "column",
-            width: "100%",
-            textAlign: "left",
-            marginBottom: "2rem",
-          }}
         >
-          <img
-            style={{ maxWidth: "80%", height: "auto" }}
-            src={Yoga}
-            alt="logo"
-          ></img>
+          <Trifecta1/>
           <p className="tl">Learn</p>
           <p className="tl">
             and understand crypto in the most easiest way possible with curated
@@ -53,20 +44,8 @@ const Education = () => {
         </Box>
         <Box
           className="flex-alcenter"
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            flexDirection: "column",
-            width: "100%",
-            textAlign: "left",
-            marginBottom: "2rem",
-          }}
         >
-          <img
-            style={{ maxWidth: "80%", height: "auto" }}
-            src={Yoga}
-            alt="logo"
-          ></img>
+          <Trifecta2/>
           <p className="tl">Learn</p>
           <p className="tl">
             and understand crypto in the most easiest way possible with curated
@@ -76,20 +55,8 @@ const Education = () => {
         </Box>
         <Box
           className="flex-alcenter"
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            flexDirection: "column",
-            width: "100%",
-            textAlign: "left",
-            marginBottom: "2rem",
-          }}
         >
-          <img
-            style={{ maxWidth: "80%", height: "auto" }}
-            src={Yoga}
-            alt="logo"
-          ></img>
+          <Trifecta3/>
           <p className="tl">Learn</p>
           <p className="tl">
             and understand crypto in the most easiest way possible with curated

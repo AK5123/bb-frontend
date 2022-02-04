@@ -1,34 +1,35 @@
 import { Box, Grid, useTheme, Zoom, Link, SvgIcon } from "@material-ui/core";
 import "./header.scss";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <Box
+    <div className="header-container">
+      <Logo/>
+      <Box
       sx={{
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
-        width: "100%",
-        height: "20vh",
-        padding: "15px",
       }}
     >
-      <p className="head">Support Us</p>
-      <p className="head">About Us</p>
-      <p className="head">Join Community</p>
+      <p className="caption-bb head">Support Us</p>
+      <p className="caption-bb head">About Us</p>
+      <p className="caption-bb head">Join Community</p>
       <Box
-        sx={{
-          padding: "0 10px",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-        }}
+      className="button-container"
+        // sx={{
+        //   padding: "0 10px",
+        //   height: "100%",
+        //   display: "flex",
+        //   alignItems: "center",
+        // }}
       >
-        <div className="launch">
-          <p className="head">Launch App</p>
-        </div>
+        <p className="button-text-bb">Launch App</p>
       </Box>
     </Box>
+    </div>
+    
   );
 };
 

@@ -9,13 +9,12 @@ const Logo = () => {
         width: "max-content",
         display: "flex",
         alignItems: "center",
-        position: "absolute",
         left: "30px",
         top: "30px",
       }}
     >
       <img src={LogoIcon} width="100px" alt="logo"></img>
-      <p style={{ paddingLeft: "20px" }}>
+      <p className="subtitle-bb" style={{ paddingLeft: "20px" }}>
         Battle <span className="bright">Brains</span>
       </p>
     </Box>
