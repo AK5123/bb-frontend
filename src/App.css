@@ -99,6 +99,21 @@ p > span {
   font-size: 18px;
   font-family: Arial;
 }
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F5A621;
+  opacity: 0.1;
+  border-radius: 6px;
+}
 
 
 
