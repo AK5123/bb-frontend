@@ -3,28 +3,28 @@ import LogoIcon from "../../assets/icons/bb.png";
 import {ReactComponent as ExploreIcon } from '../../assets/icons/explore.svg'
 import {ReactComponent as LandBottom } from '../../assets/icons/land-bottom.svg'
 import {ReactComponent as JoinIcon } from '../../assets/icons/join-waitlist.svg'
+import BountiesImage from '../../assets/icons/bounties.png'
+
 import Header from "../Header/Header";
 import Logo from "../Header/Logo";
 import "./landing.scss";
 import useWindowDimensions from "../../utils/useWindowDimensions";
-const Landing = () => {
+const Landing = ({onSideNavClick}) => {
   const {width} = useWindowDimensions()
 
   return (
     <div id="landing-view">
-      <LandBottom style={{width : '100%', height: (462/1512)*width, position: 'absolute', zIndex: 0, bottom: 0}}/>
-      <Header />
+      <LandBottom className="land-bottom" style={{width : '100%', height: (462/1512)*width, position: 'absolute', zIndex: 0, bottom: 0}}/>
+      <Header onSideNavClick={onSideNavClick}/>
+      <div className="bounties-mobile">
+      <img src={BountiesImage} style={{width: '100%'}}></img>
+
+      </div>
       <Box
-        sx={{
-          width: "50%",
-          display: "flex",
-          flexDirection: "column",
-          paddingLeft: "40px",
-          zIndex: 10,
-        }}
+      className="landing-content-container"
       >
-        <p className="subtitle-bb" style={{ textAlign: "left", marginTop: "40px" }}>
-          Learning web3 made <br /> <span>fun</span>, <span>social</span> and{" "}
+        <p className="subtitle-bb landing-title" style={{ textAlign: "left",}}>
+          Learning web3 made <span>fun</span>, <span>social</span> and{" "}
           <span>easy</span>
         </p>
         <p className="caption-bb" style={{ textAlign: "left", marginTop: "20px" }}>

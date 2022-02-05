@@ -40,7 +40,7 @@ const Education = () => {
           <p className="tl button-text-bb">
             <span>Learn</span>
           </p>
-          <p className="tl caption-bb">
+          <p className="tl-2 caption-bb">
             and understand crypto in the most easiest way possible with curated
             paths designed in getting you up and running with a solid foundation
             in no time.
@@ -56,7 +56,7 @@ const Education = () => {
           <p className="tl button-text-bb">
             <span>Practice</span>
           </p>
-          <p className="tl caption-bb">
+          <p className="tl-2 caption-bb">
             and complete quests to earn XP’s & get practical exposure
             interacting with protocols and projects in a test environment.
             Redeem XP’s for valuable incentives or earn crypto.
@@ -72,7 +72,7 @@ const Education = () => {
           <p className="tl button-text-bb">
             <span>Connect</span>
           </p>
-          <p className="tl caption-bb">
+          <p className="tl-2 caption-bb">
             and learn with other people in the community who are like-minded and
             passionate as you are. The best way through this dark forest is by
             holding hands and looking out for each other.

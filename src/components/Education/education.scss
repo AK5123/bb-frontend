@@ -13,6 +13,12 @@
 	width: 100%;
 }
 
+.tl-2{
+	text-align: left!important;
+	padding: 0 0.5rem;
+	width: 100%;
+}
+
 .flex-col{
 	display: flex;
 	flex: 1;
@@ -27,7 +33,7 @@
 	justify-content: flex-start;
 }
 
-@media(max-width : 760px){ 
+@media(max-width : 900px){ 
 	#education-view{
 		height: auto !important
   }

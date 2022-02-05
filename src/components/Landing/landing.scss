@@ -2,7 +2,50 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	background-color: black;
 	color: white;
 	overflow: hidden;
+}
+
+.landing-title{
+	width: 80%;
+	margin-top: 40px; 
+}
+
+.bounties-mobile{
+	padding: 24px 10%;
+	display: none;
+}
+
+.landing-content-container{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+	z-index: 10;
+}
+
+@media (max-width: 900px){
+
+    #landing-view{
+        height: 100%;
+    }
+
+	.landing-content-container{
+		width: 100%;
+		padding: 24px;
+	}
+
+	.land-bottom{
+		display: none;
+	}
+
+	.landing-title{
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.bounties-mobile{
+		display: block;
+	}
+
 }

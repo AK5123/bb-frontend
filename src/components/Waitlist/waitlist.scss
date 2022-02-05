@@ -17,7 +17,10 @@
 	padding: 10px 20px;
 }
 
-@media(max-width : 760px){ 
+@media(max-width : 900px){ 
+	#waitlist-view{
+		height: 100%;
+	}
   .flex-ci{
     display: flex;
     flex-direction: column-reverse;
@@ -28,6 +31,6 @@
 	}
 
 	.yoga{
-		max-width: 50%!important;
+		// max-width: 50%!important;
 	}
 }

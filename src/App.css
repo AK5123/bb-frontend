@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   overflow-y: hidden;
+  background-color: black;
 }
 *{
   padding:0;
@@ -80,16 +81,23 @@ p > span {
 }
 
 .button-container {
-  padding: 20px 30px;
+  padding: 10px 20px;
   display: flex;
 	align-items: center;
 	background-color: #F5A623;
   border-radius: 26px;
   gap: 10px;
+
+  
+}
+
+.button-container:hover{
+    cursor: pointer;
 }
 
 .caption-bb {
   font-size: 18px;
+  font-family: Arial;
 }
 
 

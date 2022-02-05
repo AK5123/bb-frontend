@@ -1,16 +1,18 @@
 import { Box, Grid, useTheme, Zoom, Link, SvgIcon } from "@material-ui/core";
 import "./header.scss";
 import Logo from "./Logo";
+import { ReactComponent as NavIcon} from "../../assets/icons/nav-icon.svg";
 
-const Header = () => {
+const Header = ({onSideNavClick}) => {
   return (
     <div className="header-container">
       <Logo/>
       <Box
+      className="nav-tabs"
       sx={{
-        display: "flex",
-        justifyContent: "flex-end",
+        justifyContent: "space-between",
         alignItems: "center",
+        width: '50%',
       }}
     >
       <p className="caption-bb head">Support Us</p>
@@ -28,6 +30,7 @@ const Header = () => {
         <p className="button-text-bb">Launch App</p>
       </Box>
     </Box>
+    <NavIcon className="ham" onClick={onSideNavClick}/>
     </div>
     
   );
