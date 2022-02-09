@@ -75,9 +75,15 @@ p > span {
   font-size: 33px;
 }
 
+@media(max-width: 500px){
+  .subtitle-bb{
+    font-size: 24px;
+  }
+}
+
 .button-text-bb {
   font-family: boldFont;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .button-container {
