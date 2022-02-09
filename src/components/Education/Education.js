@@ -18,64 +18,48 @@ const Education = () => {
 
   return (
     <div id="education-view">
-      <Box sx={{ width: "100%", padding: "2rem" }}>
+      <Box sx={{ width: "100%", padding: "2rem", marginTop: "5rem" }}>
         <p className="subtitle-bb">
           The <span>Trifecta</span> education
         </p>
       </Box>
       <Box sx={{ width: "100%", marginBottom: "3rem", padding: "0 2rem" }}>
         <p className="caption-bb">
-          To acheive the goal of onboarding humans from the centralized relam to
-          the decentralized dark forest
+          To achieve the goal of onboarding humans from Web2 to Web3
         </p>
       </Box>
       <Box className="flex-col">
         <Box className="flex-alcenter">
-          <img
-            src={Trifecta1}
-            style={{ width: "auto", height: "50%" }}
-            alt="Tri1"
-            className="small-icon"
-          ></img>
+          <img src={Trifecta1} alt="Tri1" className="trifectaImage"></img>
           <p className="tl button-text-bb">
             <span>Learn</span>
           </p>
           <p className="tl-2 caption-bb">
-            and understand crypto in the most easiest way possible with curated
-            paths designed in getting you up and running with a solid foundation
-            in no time.
+            and understand, blockchain, cryptocurrency, DAO, NFT, Metaverse and
+            much more in the easiest way possible with curated paths designed to
+            get you up to speed in no time.
           </p>
         </Box>
         <Box className="flex-alcenter">
-          <img
-            src={Trifecta2}
-            style={{ width: "auto", height: "50%" }}
-            alt="Tri1"
-            className="small-icon"
-          ></img>
+          <img src={Trifecta2} alt="Tri1" className="trifectaImage"></img>
           <p className="tl button-text-bb">
             <span>Practice</span>
           </p>
           <p className="tl-2 caption-bb">
-            and complete quests to earn XP’s & get practical exposure
-            interacting with protocols and projects in a test environment.
-            Redeem XP’s for valuable incentives or earn crypto.
+            and complete quests and challenges to earn XP’s while getting
+            practical exposure. Redeem XP’s for valuable incentives and earning
+            crypto.
           </p>
         </Box>
         <Box className="flex-alcenter">
-          <img
-            src={Trifecta3}
-            style={{ width: "auto", height: "50%" }}
-            alt="Tri1"
-            className="small-icon"
-          ></img>
+          <img src={Trifecta3} alt="Tri1" className="trifectaImage"></img>
           <p className="tl button-text-bb">
             <span>Connect</span>
           </p>
           <p className="tl-2 caption-bb">
-            and learn with other people in the community who are like-minded and
-            passionate as you are. The best way through this dark forest is by
-            holding hands and looking out for each other.
+            with like minded people, grow in community, find your co-founders or
+            team members from our pool. The best way to get through the dark
+            first is through holding hands and looking out for each other.
           </p>
         </Box>
       </Box>

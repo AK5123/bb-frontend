@@ -1,38 +1,34 @@
 import { Box, Grid, useTheme, Zoom, Link, SvgIcon } from "@material-ui/core";
 import "./header.scss";
 import Logo from "./Logo";
-import { ReactComponent as NavIcon} from "../../assets/icons/nav-icon.svg";
+import { ReactComponent as NavIcon } from "../../assets/icons/nav-icon.svg";
 
-const Header = ({onSideNavClick}) => {
+const Header = ({ onSideNavClick }) => {
   return (
     <div className="header-container">
-      <Logo/>
+      <Logo />
       <Box
-      className="nav-tabs"
-      sx={{
-        justifyContent: "space-between",
-        alignItems: "center",
-        width: '50%',
-      }}
-    >
-      <p className="caption-bb head">Support Us</p>
-      <p className="caption-bb head">About Us</p>
-      <p className="caption-bb head">Join Community</p>
-      <Box
-      className="button-container"
-        // sx={{
-        //   padding: "0 10px",
-        //   height: "100%",
-        //   display: "flex",
-        //   alignItems: "center",
-        // }}
+        className="nav-tabs"
+        sx={{
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "20%",
+        }}
       >
-        <p className="button-text-bb">Launch App</p>
+        <a href="https://discord.gg/cbzSvhz3">
+          <p className="caption-bb head">Discord</p>
+        </a>
+        <a href="https://t.me/battlebrains">
+          <p className="caption-bb head">Telegram</p>
+        </a>
+        <Box className="button-container">
+          <a href="https://tally.so/r/wkxPjn">
+            <p className="button-text-bb disabled">Launch App</p>
+          </a>
+        </Box>
       </Box>
-    </Box>
-    <NavIcon className="ham" onClick={onSideNavClick}/>
+      <NavIcon className="ham" onClick={onSideNavClick} />
     </div>
-    
   );
 };
 

@@ -21,15 +21,15 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 25px;
+    align-items: center;
+    padding: 20px;
 }
 
 .nav-tabs{
     display: flex,
 }
 
-@media (max-width: 900px){
+@media (max-width: 1024px){
 
     .nav-tabs{
         display: none;

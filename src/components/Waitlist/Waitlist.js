@@ -34,20 +34,25 @@ const Waitlist = () => {
           className="flex-center"
         >
           <p className="caption-bb" style={{ textAlign: "left" }}>
-            Get notified on new updates and avail early access. <br /> <br/> Help out
-            with a quick questionaire and be and early <span>contributor</span>
+            Get notified on new updates and avail early access. <br /> <br />{" "}
+            Help out with a quick questionaire and be and early{" "}
+            <span>contributor</span>
           </p>
-          <div className="apply" style={{ marginTop: "2rem" }}>
-            <p className="button-text-bb">Apply & Join</p>
-            <ForwardIcon style={{ marginLeft: "10px" }} />
-          </div>
+          <a href="https://tally.so/r/wkxPjn">
+            <div className="apply" style={{ marginTop: "2rem" }}>
+              <p className="button-text-bb">Apply & Join</p>
+              <ForwardIcon style={{ marginLeft: "10px" }} />
+            </div>
+          </a>
         </Box>
-        <Box sx={{
-          flex: 1,
-        }}>
+        <Box
+          sx={{
+            flex: 1,
+          }}
+        >
           <img
             className="yoga"
-            style={{ maxWidth: "80%", height: "auto"}}
+            style={{ maxWidth: "80%", height: "auto" }}
             src={Yoga}
             alt="logo"
           ></img>

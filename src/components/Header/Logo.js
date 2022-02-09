@@ -1,5 +1,5 @@
 import { Box, SvgIcon } from "@material-ui/core";
-import LogoIcon from "../../assets/icons/bb.png";
+import { ReactComponent as LogoIcon } from "../../assets/icons/sword.svg";
 import "./header.scss";
 
 const Logo = () => {
@@ -13,7 +13,7 @@ const Logo = () => {
         top: "30px",
       }}
     >
-      <img src={LogoIcon} width="100px" alt="logo"></img>
+      <LogoIcon />
       <p className="subtitle-bb" style={{ paddingLeft: "20px" }}>
         Battle <span className="bright">Brains</span>
       </p>
