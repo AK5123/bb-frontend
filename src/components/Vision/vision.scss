@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    padding: 2rem;
     gap: 10px;
 
     p{
@@ -84,6 +85,7 @@
         height: 100%;
         z-index: 100;
         margin-bottom: 0;
+        padding-top:0px;
         p{
             width: 100%;
         }

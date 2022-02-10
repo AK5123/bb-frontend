@@ -12,7 +12,7 @@ const Header = ({ onSideNavClick }) => {
         sx={{
           justifyContent: "flex-end",
           alignItems: "center",
-          width: "20%",
+          width: "30%",
         }}
       >
         <a href="https://discord.gg/cbzSvhz3" className="three">
